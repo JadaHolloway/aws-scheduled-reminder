@@ -30,6 +30,24 @@
       <artifactId>aws-java-sdk-sns</artifactId>
       <version>1.12.678</version>
     </dependency>
+    
+        <!-- JUNIT Testing -->
+    <dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.13.2</version>
+    <scope>test</scope>
+</dependency>
+
+<!-- Mockito Testing -->
+<dependency>
+  <groupId>org.mockito</groupId>
+  <artifactId>mockito-core</artifactId>
+  <version>5.11.0</version>
+  <scope>test</scope>
+</dependency>
+
+
   </dependencies>
   <build>
     <plugins>
@@ -55,6 +73,8 @@
           </execution>
         </executions>
       </plugin>
+      
+      
     </plugins>
   </build>
 
