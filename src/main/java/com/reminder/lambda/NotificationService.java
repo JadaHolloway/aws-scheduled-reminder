@@ -33,7 +33,7 @@ public class NotificationService implements INotificationService {
         this.SNS_TOPIC_ARN = SNS_TOPIC_ARN;
     }
 
-    // ----------- Method -----------
+    // ----------- Methods -----------
 
 
     @Override

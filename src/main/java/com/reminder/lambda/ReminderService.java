@@ -19,6 +19,8 @@ public class ReminderService {
     private final IReminderRepository repository;
     private final INotificationService notificationService;
 
+    // ----------- Constructor -----------
+
     /**
      * Constructs a ReminderService with the provided repository and
      * notification service.
@@ -34,6 +36,8 @@ public class ReminderService {
         this.repository = repository;
         this.notificationService = notificationService;
     }
+
+    // ----------- Methods -----------
 
 
     /**
