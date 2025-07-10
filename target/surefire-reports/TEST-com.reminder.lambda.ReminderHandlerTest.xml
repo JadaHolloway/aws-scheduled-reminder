@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.reminder.lambda.ReminderHandlerTest" time="2.479" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.reminder.lambda.ReminderHandlerTest" time="2.285" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Users\hollo\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.1.v20241024-1700\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\hollo\AppData\Local\Temp\surefire16037283758364983095\surefirebooter-20250709183237420_3.jar C:\Users\hollo\AppData\Local\Temp\surefire16037283758364983095 2025-07-09T18-32-37_301-jvmRun1 surefire-20250709183237420_1tmp surefire_0-20250709183237420_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\hollo\AppData\Local\Temp\surefire302615190883945269\surefirebooter-20250709203305644_3.jar C:\Users\hollo\AppData\Local\Temp\surefire302615190883945269 2025-07-09T20-33-05_557-jvmRun1 surefire-20250709203305644_1tmp surefire_0-20250709203305644_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\hollo\eclipse-workspace\ReminderLambda\target\test-classes;C:\Users\hollo\eclipse-workspace\ReminderLambda\target\classes;C:\Users\hollo\.m2\repository\com\amazonaws\aws-lambda-java-core\1.2.3\aws-lambda-java-core-1.2.3.jar;C:\Users\hollo\.m2\repository\com\amazonaws\aws-java-sdk-dynamodb\1.12.678\aws-java-sdk-dynamodb-1.12.678.jar;C:\Users\hollo\.m2\repository\com\amazonaws\aws-java-sdk-s3\1.12.678\aws-java-sdk-s3-1.12.678.jar;C:\Users\hollo\.m2\repository\com\amazonaws\aws-java-sdk-kms\1.12.678\aws-java-sdk-kms-1.12.678.jar;C:\Users\hollo\.m2\repository\com\amazonaws\aws-java-sdk-core\1.12.678\aws-java-sdk-core-1.12.678.jar;C:\Users\hollo\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;C:\Users\hollo\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\hollo\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\hollo\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\hollo\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.7.1\jackson-databind-2.12.7.1.jar;C:\Users\hollo\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.7\jackson-annotations-2.12.7.jar;C:\Users\hollo\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.7\jackson-core-2.12.7.jar;C:\Users\hollo\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-cbor\2.12.6\jackson-dataformat-cbor-2.12.6.jar;C:\Users\hollo\.m2\repository\joda-time\joda-time\2.8.1\joda-time-2.8.1.jar;C:\Users\hollo\.m2\repository\com\amazonaws\jmespath-java\1.12.678\jmespath-java-1.12.678.jar;C:\Users\hollo\.m2\repository\com\amazonaws\aws-java-sdk-sns\1.12.678\aws-java-sdk-sns-1.12.678.jar;C:\Users\hollo\.m2\repository\com\amazonaws\aws-java-sdk-sqs\1.12.678\aws-java-sdk-sqs-1.12.678.jar;C:\Users\hollo\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\hollo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\hollo\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\hollo\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\hollo\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar;C:\Users\hollo\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\hollo\AppData\Local\Temp\surefire16037283758364983095\surefirebooter-20250709183237420_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\hollo\AppData\Local\Temp\surefire302615190883945269\surefirebooter-20250709203305644_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23.0.1+11"/>
@@ -59,7 +59,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testHandleRequestReturnsNotNull" classname="com.reminder.lambda.ReminderHandlerTest" time="2.426">
+  <testcase name="testHandleRequestReturnsNotNull" classname="com.reminder.lambda.ReminderHandlerTest" time="2.235">
     <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\hollo\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
 WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
