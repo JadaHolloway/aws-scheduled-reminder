@@ -69,27 +69,7 @@ public class ReminderHandler implements RequestHandler<Object, String> {
      */
     @Override
     public String handleRequest(Object input, Context context) {
-        // Get current UTC time and format it as ISO-8601
-        var now = ZonedDateTime.now(ZoneOffset.UTC);
-        var currerntTime = now.format(DateTimeFormatter.ISO_INSTANT);
-
-        var remindersList = reminderRepository.getDueReminders(currerntTime);
-
-        int count = 0; // Counter for processed reminders
-
-        for (Item item : remindersList) {
-            String userId = item.getString("userID");
-            String reminderTime = item.getString("reminderTime");
-
-            notificationService.sendReminder(item, context);
-
-            reminderRepository.markAsSent(userId, reminderTime, context);
-
-            context.getLogger().log("Sending reminder to: " + userId);
-
-            count++;
-        }
-
+        int count = reminderService.processDueReminders(context);
         return "Processed " + count + " reminder" + (count == 1 ? "" : "s")
             + ".";
     }

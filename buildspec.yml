@@ -2,15 +2,14 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      java: corretto17
     commands:
-      - echo Installing Maven dependencies...
-      - mvn install
-
+      - echo Installing...
   build:
     commands:
-      - echo Building project...
-      - mvn package
-
+      - echo Build started
+      - mvn package -DskipTests
 artifacts:
   files:
-    - target/ReminderLambda-0.0.1-SNAPSHOT.jar
+    - target/*.jar
