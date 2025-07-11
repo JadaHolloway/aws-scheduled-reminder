@@ -5,11 +5,14 @@ phases:
     runtime-versions:
       java: corretto17
     commands:
-      - echo Installing...
+      - echo Installing dependencies...
   build:
     commands:
-      - echo Build started
-      - mvn package -DskipTests
-artifacts:
-  files:
-    - target/*.jar
+      - echo Running tests...
+      - mvn test
+reports:
+  surefire-reports:
+    files:
+      - target/surefire-reports/*.xml
+    base-directory: target
+    discard-paths: yes
