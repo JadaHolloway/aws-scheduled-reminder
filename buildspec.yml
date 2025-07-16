@@ -6,13 +6,22 @@ phases:
       java: corretto17
     commands:
       - echo Installing dependencies...
+
   build:
     commands:
       - echo Running tests...
       - mvn test
+      - echo Packaging application...
+      - mvn package -DskipTests
+
 reports:
   surefire-reports:
     files:
-      - target/surefire-reports/*.xml
+      - "**/surefire-reports/*.xml"
     base-directory: target
     discard-paths: yes
+
+artifacts:
+  files:
+    - target/*.jar
+  name: BuildArtifact
