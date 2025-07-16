@@ -9,6 +9,8 @@ phases:
 
   build:
     commands:
+      - echo Switching to project directory...
+      - cd ReminderLambda
       - echo Running tests...
       - mvn test
       - echo Packaging application...
@@ -18,10 +20,10 @@ reports:
   surefire-reports:
     files:
       - "**/surefire-reports/*.xml"
-    base-directory: target
+    base-directory: ReminderLambda/target
     discard-paths: yes
 
 artifacts:
   files:
-    - target/*.jar
+    - ReminderLambda/target/*.jar
   name: BuildArtifact
