@@ -7,10 +7,14 @@ phases:
     commands:
       - echo Installing dependencies...
 
-  build:
-    commands:
-      - echo Running tests...
-      - mvn test
+	  build:
+	    commands:
+	      - echo "Listing current directory:"
+	      - ls -al
+	      - echo "Checking for ReminderLambda subdirectory..."
+	      - ls -al ReminderLambda || echo "ReminderLambda not found"
+	      - echo "Trying to run mvn test from current directory"
+	      - mvn test
       - echo Packaging application...
       - mvn package -DskipTests
 
