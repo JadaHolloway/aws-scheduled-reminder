@@ -1,1 +1,6 @@
-C:\Users\hollo\eclipse-workspace\ReminderLambda\src\main\java\com\reminder\lambda\ReminderHandler.java
+/Users/athensholloway/Development/aws-scheduled-reminder/src/main/java/com/reminder/lambda/ReminderRepository.java
+/Users/athensholloway/Development/aws-scheduled-reminder/src/main/java/com/reminder/lambda/ReminderService.java
+/Users/athensholloway/Development/aws-scheduled-reminder/src/main/java/com/reminder/lambda/IReminderRepository.java
+/Users/athensholloway/Development/aws-scheduled-reminder/src/main/java/com/reminder/lambda/INotificationService.java
+/Users/athensholloway/Development/aws-scheduled-reminder/src/main/java/com/reminder/lambda/ReminderHandler.java
+/Users/athensholloway/Development/aws-scheduled-reminder/src/main/java/com/reminder/lambda/NotificationService.java
