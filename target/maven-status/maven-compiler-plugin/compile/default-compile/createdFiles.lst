@@ -1,1 +1,6 @@
-com\reminder\lambda\ReminderHandler.class
+com/reminder/lambda/NotificationService.class
+com/reminder/lambda/INotificationService.class
+com/reminder/lambda/IReminderRepository.class
+com/reminder/lambda/ReminderService.class
+com/reminder/lambda/ReminderRepository.class
+com/reminder/lambda/ReminderHandler.class
