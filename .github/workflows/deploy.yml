@@ -31,5 +31,5 @@ jobs:
         run: |
           aws lambda update-function-code \
             --function-name SendReminderFunction \
-            --zip-file fileb://lambda.zip
+            --zip-file fileb://lambda.zip \
             --region us-east-2
