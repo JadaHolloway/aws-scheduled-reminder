@@ -30,7 +30,6 @@ public class ReminderHandler implements RequestHandler<Object, String> {
     private final String SNS_TOPIC_ARN =
         "arn:aws:sns:us-east-2:311141561637:ReminderTopic";
 
-    // ----------- Constructors -----------
 
     /**
      * Initializes the ReminderHandler by creating and configuring AWS service
@@ -61,7 +60,6 @@ public class ReminderHandler implements RequestHandler<Object, String> {
         this.reminderService = reminderService;
     }
 
-    // ----------- Methods -----------
 
 
     /**

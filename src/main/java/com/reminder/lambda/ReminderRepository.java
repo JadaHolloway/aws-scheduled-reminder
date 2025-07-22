@@ -22,13 +22,11 @@ public class ReminderRepository implements IReminderRepository {
      */
     private final Table table;
 
-    // ----------- Constructor -----------
 
     public ReminderRepository(Table table) {
         this.table = table;
     }
 
-    // ----------- Methods -----------
 
 
     @Override
