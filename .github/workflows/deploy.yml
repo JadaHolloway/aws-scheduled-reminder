@@ -1,0 +1,34 @@
+name: Deploy to AWS Lambda
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials via OIDC
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::311141561637:role/aws-scheduled-reminder-GitHubRole
+          aws-region: us-east-1
+
+      - name: Zip Lambda function
+        run: |
+          zip -r lambda.zip . -x ".git/*" ".github/*"
+
+      - name: Deploy Lambda
+        run: |
+          aws lambda update-function-code \
+            --function-name SendReminderFunction \
+            --zip-file fileb://lambda.zip
