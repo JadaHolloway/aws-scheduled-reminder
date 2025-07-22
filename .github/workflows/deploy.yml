@@ -21,7 +21,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::311141561637:role/aws-scheduled-reminder-GitHubRole
-          aws-region: us-east-1
+          aws-region: us-east-2
 
       - name: Zip Lambda function
         run: |
@@ -32,3 +32,4 @@ jobs:
           aws lambda update-function-code \
             --function-name SendReminderFunction \
             --zip-file fileb://lambda.zip
+            --region us-east-2
