@@ -14,19 +14,18 @@ import com.amazonaws.services.sns.model.PublishRequest;
  */
 public class NotificationService implements INotificationService {
     /**
-     * AWS client used to interact with the Simple Notification Service (SNS)
-     * Used for**: Publishing messages (e.g., sending email reminders via SNS
-     * topic)
+     * AWS client used to interact with the Simple Notification Service (SNS).
+     * Used for publishing messages (e.g., sending email reminders via SNS topic).
      */
     private final AmazonSNS snsClient;
-
-    // ----------- Constructor -----------
 
     /**
      * Amazon Resource Name (ARN) of the SNS topic used to send email
      * notifications.
      */
     private final String SNS_TOPIC_ARN;
+
+    // ----------- Constructor -----------
 
     public NotificationService(AmazonSNS snsClient, String SNS_TOPIC_ARN) {
         this.snsClient = snsClient;
@@ -57,7 +56,5 @@ public class NotificationService implements INotificationService {
             context.getLogger().log("Error publishing reminder: " + e
                 .getMessage());
         }
-        // TODO Auto-generated method stub
-
     }
 }
